@@ -11926,8 +11926,8 @@ Standard deviation of prices: $165,171.13
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-An increase in the value of 'RM' would lead to an increase of the value of 'MEDV'. More rooms a house has, more people can live it, and higer value a house would have usually. Therefore a 7-room home is usually worth more than a 6-room house.</p>
-<p>However and increase in the value of 'LSTAT' or 'PTRATIO' would result in an decrease of the value of 'MEDV'. Higher LSTAT means higher percentage of working poor people in a community. And home in this setting usually have lower price than those in communities with lower LSTAT. And higher 'PTRATIO' means more students for every teacher. Usually this means higer density and lower education resources in this community and homes would worth less in this kind of community.</p>
+An increase in the value of 'RM' would lead to an increase in the value of 'MEDV'. More rooms a house has, more people can live it, and higher value a house would have usually. Therefore a 7-room home is usually worth more than a 6-room house.</p>
+<p>However and increase in the value of 'LSTAT' or 'PTRATIO' would result in a decrease of the value of 'MEDV'. Higher LSTAT means higher percentage of working poor people in a community. And home in this setting usually has lower price than those in communities with lower LSTAT. And higher 'PTRATIO' means more students for every teacher. Usually this means higer density and lower education resources in this community and homes would worth less in this kind of community.</p>
 
 </div>
 </div>
@@ -11961,7 +11961,7 @@ An increase in the value of 'RM' would lead to an increase of the value of 'MEDV
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;r2_score&#39;</span>
@@ -14604,7 +14604,7 @@ cwnMkzXnnHPOuQT2/+aA4AgCa1+LAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>When the model is trained with a maximum depth of 1, the model suffers from high bias as the training score and validation score are low. I could see both of them are low but close, about 0.35 and 0.48 specifically. While the maximum depth increases to 10, the validation score curve turns down and away from training score curve. The training score is about 1.0 when the maximum depth is 1, while the validation score is only around 0.7, showing that the model suffers from hight variance.</p>
+<p><strong>Answer: </strong>When the model is trained with a maximum depth of 1, the model suffers from high bias as the training score and validation score are low. I could see both of them are low but close, about 0.35 and 0.48 specifically. While the maximum depth increases to 10, the validation score curve turns down and away from training score curve. The training score is about 1.0 when the maximum depth is 1, while the validation score is only around 0.7, showing that the model suffers from high variance.</p>
 
 </div>
 </div>
@@ -14713,7 +14713,7 @@ cwnMkzXnnHPOuQT2/+aA4AgCa1+LAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
@@ -14899,10 +14899,9 @@ Predicted selling price for Client 3&#39;s home: $930,490.91
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> All above three price values predictted by the model look reasonable given the values for the respective features.</p>
-<p>As discussed in the Data Exploration section, An increase in the numbe of rooms ('RM') would lead to an increase of the value of 'MEDV'. 
-However and increase in the value of 'LSTAT' or 'PTRATIO' would result in an decrease of the value of 'MEDV' as they imply higher percentage of working poor people and lower education resources in this community , and result in lower price of a home.</p>
-<p>Among 3 clients, the third one has highest RM and lowest 'LSTAT' and 'PTRATIO'. Therefore Client 3 is expected to have the most expensive house. Client stays at the other end.And Client 1 have all three features in the middle, therefore her/his home is expected to have a price in the middele.</p>
+<p><strong>Answer: </strong> All above three price values predicted by the model look reasonable given the values for the respective features.</p>
+<p>As discussed in the Data Exploration section, An increase in the number of rooms ('RM') would lead to an increase in the value of 'MEDV'. However and increase in the value of 'LSTAT' or 'PTRATIO' would result in a decrease of the value of 'MEDV' as they imply higher percentage of working poor people and lower education resources in this community, and result in lower price of a home.</p>
+<p>Among 3 clients, the third one has highest RM and lowest 'LSTAT' and 'PTRATIO'. Therefore Client 3 is expected to have the most expensive house. Client 2 stays at the other end. And Client 1 has all three features in the middle, therefore her/his home is expected to have a price in the middle.</p>
 <p>All three predicted price value is between the minimum($105,000.00) and maximum($1,024,800.00) of all samples.</p>
 
 </div>
@@ -14979,10 +14978,10 @@ Range in prices: $73,357.39
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> The constructed model should not be used in a real-world setting.</p>
-<p>Firstly, the model was trained and tested with data collected from 1978, which is outdated and very likely not able to reflect pattterns in today's real eastate market data. We need to use lastest data to train and test the model before applying it to today's market</p>
+<p>Firstly, the model was trained and tested with data collected from 1978, which is outdated and, very likely, not able to reflect patterns in today's real estate market data. We need to use latest data to train and test the model before applying it to today's market</p>
 <p>Secondly, the features present in the data are not sufficient to describe a home. Other features such as total area of room and lot, age of a house can also play important roles in deciding house price.</p>
-<p>When we checked the sensitivity, we could see the preditions were not very consistent. Among the above 10 predicted price, the difference between the highest and lowest value is around 17% of the highest price.</p>
-<p>Furthermore, data was collected in urban city like Boston would not applicable in a rural city. There are different features need to be consider in diffrent settings.</p>
+<p>When we checked the sensitivity, we could see the predictions were not very consistent. Among the above 10 predicted price, the difference between the highest and lowest value is around 17% of the highest price.</p>
+<p>Furthermore, data was collected in an urban city like Boston would not applicable in a rural city. There are different features need to be considered in different settings.</p>
 
 </div>
 </div>
